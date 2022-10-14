@@ -1,13 +1,11 @@
-require('@nomiclabs/hardhat-waffle');
+require("@nomicfoundation/hardhat-toolbox")
 
 module.exports = {
-  solidity: '0.8.17',
+  solidity: "0.8.17",
   networks: {
-    hardhat: {
-      forking: {
-        url: "https://eth-mainnet.g.alchemy.com/v2/4KkbXmeQ_HsgRFY6LDDpKdLfzPuVRoIV",
-        accounts: ['ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80']
-      }
+    localganache: {
+      url: 'HTTP://127.0.0.1:7545',
+      accounts: ["9c62763d7269e46611cb14d7e56daf6ae2665beb7e162ed4a3df592f6e7a2a20"]
     }
   }
-};
+}
